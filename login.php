@@ -22,7 +22,7 @@
     <img src="logo2.png" alt="Logo de tu sitio" class="logo5">
     <h2 style="font-family: Felix Titling, sans-serif; ">Inicio De Sesión</h2>
     
-
+<!-- inicio del formulario -->
     <form action="validar.php" method="post">
         
         <center><label for="nombre" class="color-blanco" >Usuario</label></center>
