@@ -1,0 +1,1039 @@
+/* estilo de inicio */
+.inicio{
+    width: 500px;
+    background: rgba(0, 0, 0, 0.473);
+    border-radius: 110px;
+    color: white;
+    margin: 100px;
+    padding: 20px;
+}
+
+/*BIENVENIDA DEL PERFIL*/
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 40px; */
+    padding: 60px;
+    background-size: cover;
+}
+
+/* LOGO Y ESTILO DE LETRA Y COLOR    */
+#bienvenida {
+    max-width: 400px;
+    margin: 100px auto; /* Espacio en la parte superior para el logo */
+    padding: 20px;
+    border-radius: 70px;
+    /* box-shadow: rgb(6, 61, 150); */
+    background: rgba(0, 0, 0, 0.473); /* Fondo gris transparente */
+    text-align: center;
+    color: #ffd700; /* Dorado */
+}
+/* form {
+    text-align: left;
+} */
+/* 
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(81, 73, 62)242, 223, 223;
+} */
+
+/* ESTILO DE TODOS LOS TEXTOS */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 0.5px;
+    border: 0.5px solid grey;
+    border-radius: 100px;
+}
+
+
+/*Manejo de ¿Has olvidado la contraseña?*/
+a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilo para el logo */
+.logo {
+    max-width: 250px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin: 20px auto; /* Centra el logo horizontalmente y agrega espacio en la parte superior */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+/* Estilos para el botón */
+.button {
+    font-family: Felix Titling, sans-serif;
+    background-color: #18435f;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 3s, color 3s;
+}
+
+/* Efecto de ondas */
+.button span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: width 2.0s ease-out, height 0.3s ease-out, background-color 3s;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover::after {
+    width: 0;
+    height: 0;
+}
+input[type="text"] {
+    background-color: transparent; /* Cambia el color del fondo del campo */
+    color: white; /* Cambia el color del texto dentro del campo */
+    border: 2px solid #ffffff; /* Define un borde alrededor del campo */
+    border-radius: 100px; /* Redondea los bordes del campo */
+    padding: 10px; /* Añade espacio dentro del campo */
+    font-size: 16px; /* Define el tamaño del texto */
+}
+
+input[type="password"] {
+    background-color: transparent; /* Cambia el color del fondo del campo */
+    color: rgb(255, 255, 255); /* Cambia el color del texto dentro del campo */
+    border: 2px solid #f7f7f7; /* Define un borde alrededor del campo */
+    border-radius: 100px; /* Redondea los bordes del campo */
+    padding: 10px; /* Añade espacio dentro del campo */
+    font-size: 16px; /* Define el tamaño del texto */
+}
+.esquina {
+    position: fixed;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    color: white;
+}
+/*Forma de estilo de la Bienvenida*/
+.container ul {
+    font-family: Bookman Old Style, sans-serif; /* Cambia la fuente del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+.container ul li {
+    margin-bottom: 5px; /* Espacio inferior entre elementos de la lista */
+}
+
+/*Efecto honda en Bienvenido_Opciones hacia abajo*/
+.options,
+.logout-button {
+    background: transparent; /* Color de fondo de los enlaces */
+    color: #ffffff; /* Color del texto de los enlaces */
+    padding: 10px; /* Añade espacio alrededor del texto de los enlaces */
+    margin: 10px; /* Margen entre los enlaces */
+    border-radius: 110px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    box-shadow: 0px 0px 10px blue; /* Sombreado */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    display: inline-block; /* Permite el espaciado horizontal */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición al pasar el mouse */
+}
+/*Hace efecto en la parte de debajo de "Opciones" en "Cerrar Sesión"*/
+.options:hover,
+.logout-button:hover {
+    background: white; /* Cambia el color de fondo al pasar el mouse */
+    color: rgb(8, 153, 182); /* Cambia el color del texto al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+/* Estilo para las opciones seleccionadas */
+Select option:checked {
+    color: blue; /* Cambia el color del texto de las opciones seleccionadas */
+}
+/*Para*/
+.container .logo {
+    width: 35%; /* Ancho deseado */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+
+/*ESTILO DE LOGIN*/
+.logo5{
+    width: 350px;
+    height: 200px;
+}
+.color-blanco{
+    color: white;
+    font-family: Baskerville Old Face;
+    font-size: 25px;
+}
+.color-blanco{
+    color: white;
+}
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparens; /* Cambiar el color de fondo si es necesario */
+    
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+/*Diseño de colores en los botones*/
+.options {
+    background: transparens;
+    color: while;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombreado */
+    transition: background-color 0.3s ease;
+    /* Transición de color al pasar el mouse */
+    text-decoration: none;
+    /* Quita el subrayado enlaces */
+    display: inline-block;
+}
+
+/*Cambia el color cuando el mouse toca en los botones*/
+.options:hover {
+    background: blue;
+    /* Negro al pasar el mouse */
+    /* color:#;
+    cursor: pointer; */
+}
+
+/* Estilo para la imagen al principio de la página */
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilo para el botón de Cerrar sesión */
+.logout-button {
+background: transparent;
+color: white;
+padding: 10px 20px; /* Ajusta el padding según sea necesario */
+border: 1px solid white; /* Grosor del borde y color blanco */
+border-radius: 100px; /* Ajusta el radio del borde según sea necesario */
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición de color al pasar el mouse */
+position: absolute;
+}
+
+/*Ajusta en logo LS*/
+.logo {
+    max-width: 70px;
+    /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin-left: 65px;
+}
+/*Color de barra horizontal*/
+.navbar {
+    background-color: bluish-black;
+    overflow: hidden;
+}
+/*Diametro de la barra horizontal*/
+.navbar a {
+    float: left;
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 35px 20px;
+    text-decoration: none;
+    
+}
+
+
+/*Posicionamiento de las tablas del logo LS*/
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+}
+/*Segmentación de botones*/
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 2000px; /* Ajusta el margen izquierdo para dejar espacio para la barra lateral */
+    padding: 20px;
+}
+/*Color de barra lateral*/
+.sidebar {
+    background-color: black;
+    padding: 20px;
+}
+  /* Estilos del botón desplegable */
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* Estilos del contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Alinea el menú a la derecha del botón */
+}
+/* Estilos de los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Cambia el color de fondo al pasar el mouse por encima */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+/* Mostrar el menú desplegable al hacer clic en el botón */
+.show {
+    display: block;
+}
+.tabla {
+    margin-left: 400px;
+}
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparens; /* Cambiar el color de fondo si es necesario */
+    
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+/*Diseño de colores en los botones*/
+.options {
+    background: transparens;
+    color: while;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombreado */
+    transition: background-color 0.3s ease;
+    /* Transición de color al pasar el mouse */
+    text-decoration: none;
+    /* Quita el subrayado enlaces */
+    display: inline-block;
+}
+/*Cambia el color cuando el mouse toca en los botones*/
+.options:hover {
+    background: blue;
+    /* Negro al pasar el mouse */
+    /* color:; */
+    cursor: pointer;
+}
+
+/* Estilo para la imagen al principio de la página */
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilo para el botón de Cerrar sesión */
+.logout-button {
+background: transparent;
+color: white;
+padding: 10px 20px; /* Ajusta el padding según sea necesario */
+border: 1px solid white; /* Grosor del borde y color blanco */
+border-radius: 100px; /* Ajusta el radio del borde según sea necesario */
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición de color al pasar el mouse */
+position: absolute;
+}
+
+/*Ajusta en logo LS*/
+.logo {
+    max-width: 70px;
+    /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin-left: 65px;
+}
+/*Color de barra horizontal*/
+.navbar {
+    background-color: bluish-black;
+    overflow: hidden;
+}
+/*Diametro de la barra horizontal*/
+.navbar a {
+    float: left;
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 35px 20px;
+    text-decoration: none;
+    
+}
+
+
+/*Posicionamiento de las tablas del logo LS*/
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+}
+/*Segmentación de botones*/
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 2000px; /* Ajusta el margen izquierdo para dejar espacio para la barra lateral */
+    padding: 20px;
+}
+/*Color de barra lateral*/
+.sidebar {
+    background-color: black;
+    padding: 20px;
+}
+  /* Estilos del botón desplegable */
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* Estilos del contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Alinea el menú a la derecha del botón */
+}
+/* Estilos de los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Cambia el color de fondo al pasar el mouse por encima */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+/* Mostrar el menú desplegable al hacer clic en el botón */
+.show {
+    display: block;
+}
+.tabla {
+    margin-left: 400px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*tabla usuarios*/
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddbb04; /* Amarillo */
+}
+
+td a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+td a:hover {
+    background-color: #FFA500; /* Amarillo más claro al pasar el mouse */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+/* interacciones de botones de regresar y registrar*/
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1.3s;
+    margin: 0 10px;
+    margin-left: 200px;
+}
+
+.button-container a:hover {
+    background-color: #FFA500; /* Amarillo más claro al pasar el mouse */
+    
+}
+.apartado{
+    margin-left: 200px;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: -10px;       
+}
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+/*Diseño de colores en los botones*/
+.options {
+    background: transparens;
+    color: while;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombreado */
+    transition: background-color 0.3s ease;
+    /* Transición de color al pasar el mouse */
+    text-decoration: none;
+    /* Quita el subrayado enlaces */
+    display: inline-block;
+}
+/*Cambia el color cuando el mouse toca en los botones*/
+.options:hover {
+    background: blue;
+    /* Negro al pasar el mouse */
+    /* color:; */
+    cursor: pointer;
+}
+
+/* Estilo para la imagen al principio de la página */
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilo para el botón de Cerrar sesión */
+.logout-button {
+background: transparent;
+color: white;
+padding: 10px 20px; /* Ajusta el padding según sea necesario */
+border: 1px solid white; /* Grosor del borde y color blanco */
+border-radius: 100px; /* Ajusta el radio del borde según sea necesario */
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición de color al pasar el mouse */
+position: absolute;
+}
+
+/*Ajusta en logo LS*/
+.logo {
+    max-width: 70px;
+    /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin-left: 65px;
+}
+/*Color de barra horizontal*/
+.navbar {
+    background-color: bluish-black;
+    overflow: hidden;
+}
+/*Diametro de la barra horizontal*/
+.navbar a {
+    float: left;
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 35px 20px;
+    text-decoration: none;
+    
+}
+
+
+/*Posicionamiento de las tablas del logo LS*/
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+}
+/*Segmentación de botones*/
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 2000px; /* Ajusta el margen izquierdo para dejar espacio para la barra lateral */
+    padding: 20px;
+}
+/*Color de barra lateral*/
+.sidebar {
+    background-color: black;
+    padding: 20px;
+}
+  /* Estilos del botón desplegable */
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* Estilos del contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Alinea el menú a la derecha del botón */
+}
+/* Estilos de los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Cambia el color de fondo al pasar el mouse por encima */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+/* Mostrar el menú desplegable al hacer clic en el botón */
+.show {
+    display: block;
+}
+.tabla {
+    margin-left: 400px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*registros*/
+#registro {
+    background: rgba(0, 0, 0, 0.473);
+    padding: 0px;
+    border-radius: 110px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#registro h2 {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#registro form {
+    font-family: Felix Titling, sans-serif;
+    color: white;
+}
+
+#registro label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 0.5px;
+    border: 0.5px solid grey;
+    border-radius: 100px;
+}
+
+
+#registro a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*Empleados*/
+
+#empleados {
+    background: rgba(0, 0, 0, 0.473);
+    padding: 0px;
+    border-radius: 150px;
+    width: 40%;
+    margin: 450px;
+}
+
+#empleados h1 {
+    font-family: Felix Titling, sans-serif;
+    color: white;
+}
+
+#empleados form {
+    font-family: Felix Titling, sans-serif;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+input[type="reset"] {
+    width: 90%;
+    border-radius: 150px;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+input[type="date"] {
+    width: 90%;
+    border-radius: 150px;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+
+#empleados button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 90%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+#empleados button:hover {
+    background-color: #45a049;
+}
+
+#empleados a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+} 
+
+#btn-registrar-nuevo {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 450px;
+    width: 7%;
+}
+
+#modificar{
+    padding: 25%;
+    width: 0px;
+    background: transparent;
+}
+
+.table-responsive {
+    margin-bottom: 200px; /* Espaciado adicional para la tabla */
+}
+
+#modificacion{
+    margin-top: -500px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+table {
+    margin-top: 100px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* modificar usuario */
+#modificar_usuario{
+    width: 250px;
+    background-color: #4CAF50;
+}

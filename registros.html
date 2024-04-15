@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="empleados.php"></a>
+    <h2>REGISTROS INGRESADOS</h2>
+
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <th colspan="2" align="center"></th>
+    <table>
+        <tr>
+            <td>Numero de Documento: </td>
+            <td><input type="number" name="cedula" maxlenght="5" ></td>
+        </tr>
+    </table>
+    <tr>
+        <td align="center">
+        <input type="submit" name="submit" value="Submit Form"><br>
+    </tr>
+
+    <?php
+if ( isset($_POST['cedula'] ) ){            
+            $usuario = 'root';
+            $password = '';             
+            try {
+                $conn = new PDO('mysql:host=localhost;dbname=tls_v6', $usuario, $password);            
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                echo 'Se ha conectado a la Base de Datos.<br>';            
+                echo "Pagina Reservada para REPORTES POR DOCUMENTOS....";
+//
+$consulta= "SELECT Cedula, FechaNacimiento,Nombres, Apellidos, Direccion, Telefono, NumeroTargetaProfesional FROM 
+tblempleados;
+   WHERE cedula='$_REQUEST[cedula]'";
+                $query = $conn-> prepare($consulta); 
+                $query -> execute();
+                $registros=$query->fetchAll(PDO::FETCH_OBJ);
+              echo '<table border="1" cellspacing="2" cellpadding="2"> 
+                <tr> 
+                    <td> <font face="Arial">DOCUMENTO</font> </td> 
+                    <td> <font face="Arial">Fecha de Nacimiento</font> </td> 
+                    <td> <font face="Arial">Nombres del Empleado</font> </td> 
+                    <td> <font face="Arial">Apellidos del Empleado </font> </td> 
+                    <td> <font face="Arial">Lugar</font> </td> 
+                    <td> <font face="Arial">Numero Telefonico</font> </td>
+                    <td> <font face="Arial">Tarjeta Profesional</font> </td>                   
+                </tr>';            
+               if($query -> rowCount() > 0)   {    
+                foreach($registros as $reg) {
+                  echo '<tr> 
+                    <td>'.$reg ->Cedula.'</td> 
+                    <td>'.$reg ->FechaNacimiento.'</td> 
+                    <td>'.$reg ->Nombres.'</td> 
+                    <td>'.$reg ->Apellidos.'</td> 
+                    <td>'.$reg ->Direccion.'</td> 
+                    <td>'.$reg ->Telefono.'</td> 
+                    <td>'.$reg ->NumeroTargetaProfesional.'</td>
+                </tr>';
+                $conn = null;         
+             }
+            }
+              }
+              catch(PDOException $err) {
+                  // Imprime error de conexión
+                echo "ERROR: No se pudo conectar a la base de datos: " . $err->getMessage();                
+                }}        
+    ?>
+</body>
+</html>
